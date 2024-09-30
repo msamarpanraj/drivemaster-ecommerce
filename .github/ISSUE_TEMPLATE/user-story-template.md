@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Description:
+**Description:**
 
 As a **role** I want to **perform an action** so that **benefit**.
 
