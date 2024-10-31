@@ -18,3 +18,6 @@ def contact(request):
         messages.success(request, "Your message has been sent!")
         return redirect('contact')
     return render(request, 'home/contact.html')
+
+def lessons(request):
+    return render(request, 'home/lessons.html')
