@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
+from .models import Lesson
 
 
 
@@ -21,3 +22,7 @@ def contact(request):
 
 def lessons(request):
     return render(request, 'home/lessons.html')
+
+def lesson_detail(request, lesson_id):
+    lesson = get_object_or_404(Lesson, id=lesson_id)
+    return render(request, 'home/lesson_detail.html', {'lesson': lesson})
