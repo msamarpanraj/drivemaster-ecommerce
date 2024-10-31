@@ -8,4 +8,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('lessons/', views.lessons, name='lessons'),
     path('lessons/<int:lesson_id>/', views.lesson_detail, name='lesson_detail'),  # New URL pattern
+    path('testimonials/', views.testimonials, name='testimonials'),
+
 ]

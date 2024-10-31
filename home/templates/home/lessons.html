@@ -8,17 +8,17 @@
                 <div class="col-md-4">
                     <h3>EDT Lessons</h3>
                     <p>Essential Driver Training, including 12 EDT lessons.</p>
-                    <a href="#" class="btn btn-outline-secondary">View Details</a>
+                    <a href="{% url 'lesson_detail' lesson_id=lesson.id %}" class="btn btn-outline-secondary">View Details</a>
                 </div>
                 <div class="col-md-4">
                     <h3>Pre-Test Lessons</h3>
                     <p>Prepare for your driving test with tailored lessons.</p>
-                    <a href="#" class="btn btn-outline-secondary">View Details</a>
+                    <a href="{% url 'lesson_detail' lesson_id=lesson.id %}" class="btn btn-outline-secondary">View Details</a>
                 </div>
                 <div class="col-md-4">
                     <h3>Car Hire for Tests</h3>
                     <p>Convenient car hire for your driving test.</p>
-                    <a href="#" class="btn btn-outline-secondary">View Details</a>
+                    <a href="{% url 'lesson_detail' lesson_id=lesson.id %}" class="btn btn-outline-secondary">View Details</a>
                 </div>
             </div>
         </div>

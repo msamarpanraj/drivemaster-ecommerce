@@ -20,9 +20,16 @@ def contact(request):
         return redirect('contact')
     return render(request, 'home/contact.html')
 
+
 def lessons(request):
-    return render(request, 'home/lessons.html')
+    lessons = Lesson.objects.all()  # or specific queryset
+    return render(request, 'home/lessons.html', {'lessons': lessons})
+
 
 def lesson_detail(request, lesson_id):
     lesson = get_object_or_404(Lesson, id=lesson_id)
     return render(request, 'home/lesson_detail.html', {'lesson': lesson})
+
+
+def testimonials(request):
+    return render(request, 'home/testimonials.html')
