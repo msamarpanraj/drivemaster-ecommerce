@@ -11,34 +11,41 @@
 
 {% block content %}
 
-<!-- Hero Section -->
-<section class="hero text-center text-white d-flex align-items-center" style="background-image: url('{% static 'images/hero_background.jpg' %}');">
-  <div class="container">
-      <h1 class="display-4">Master the Road with DriveMaster!</h1>
-      <p class="lead">Professional driving lessons to help you succeed on the road.</p>
-      <a href="#" class="btn btn-primary mt-3">Explore Lessons</a>
+ <!-- Hero Section -->
+ <section class="hero text-center my-5">
+  <div class="jumbotron bg-primary text-white">
+      <h1 class="display-4">Welcome to DriveMaster</h1>
+      <p>Your trusted platform for comprehensive driving lessons in Ireland.</p>
+      <a href="#lessons" class="btn btn-light btn-lg mt-3">View Lessons</a>
   </div>
 </section>
 
-<!-- Driving Lessons Section -->
-<section id="lessons" class="py-5 text-center">
-  <div class="container">
-      <h2 class="mb-4">Our Driving Lessons</h2>
-      <div class="row">
-          <div class="col-md-4">
-              <h3>12 EDT Lessons</h3>
-              <p>Complete your essential driving training with our comprehensive package.</p>
-              <a href="#" class="btn btn-outline-primary">Learn More</a>
+<!-- Lessons Section -->
+<section id="lessons" class="my-5">
+  <h2 class="text-center">Our Driving Lessons</h2>
+  <div class="row">
+      <div class="col-md-4 text-center">
+          <div class="card shadow-sm">
+              <div class="card-body">
+                  <h3 class="card-title">EDT Lessons</h3>
+                  <p>Essential Driver Training, including 12 EDT lessons.</p>
+              </div>
           </div>
-          <div class="col-md-4">
-              <h3>Pre-Test Lessons</h3>
-              <p>Focused lessons to get you test-ready and confident on the road.</p>
-              <a href="#" class="btn btn-outline-primary">Learn More</a>
+      </div>
+      <div class="col-md-4 text-center">
+          <div class="card shadow-sm">
+              <div class="card-body">
+                  <h3 class="card-title">Pre-Test Lessons</h3>
+                  <p>Get fully prepared for your driving test with tailored sessions.</p>
+              </div>
           </div>
-          <div class="col-md-4">
-              <h3>Car Hire for Test</h3>
-              <p>Reliable car hire for the day of your driving test.</p>
-              <a href="#" class="btn btn-outline-primary">Learn More</a>
+      </div>
+      <div class="col-md-4 text-center">
+          <div class="card shadow-sm">
+              <div class="card-body">
+                  <h3 class="card-title">Car Hire for Tests</h3>
+                  <p>Convenient car hire service for your driving test.</p>
+              </div>
           </div>
       </div>
   </div>
